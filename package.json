@@ -40,6 +40,8 @@
     "react-slick": "^0.29.0",
     "sanity": "^3.8.3",
     "slick-carousel": "^1.8.1",
+    "storejs": "^2.0.5",
+    "stores": "^1.0.0",
     "stripe": "^12.18.0",
     "styled-components": "5.2",
     "tailwind-merge": "^1.14.0",

@@ -1,0 +1,103 @@
+import { Product } from "./types";
+import P1 from "/public/p1.png"
+import pic2 from "/public/P6.webp"
+import pic3 from "/public/P4.webp"
+
+export const Products : Product [] =  [ 
+    {
+    id : 1 ,
+    name : 'Product 01', 
+    tagline : 'Dress',
+    price : 100 ,
+    category: 'female' ,
+    image: P1,
+    } ,
+    {
+    id : 2 ,
+    name : 'Product 02', 
+    tagline : 'Dress',
+    price : 150 ,
+    category: 'female' ,
+    image: pic2,
+    } ,
+    {
+    id : 3 ,
+    name : 'Product 03' , 
+    tagline : 'Dress',
+    price : 175 ,
+    category: 'female' ,
+    image: pic3,
+    } ,
+    {
+    id : 4 ,
+    name : 'Product 04', 
+    tagline : 'Dress',
+    price : 200 ,
+    category: 'female' ,
+    image: P1,
+    } ,
+    {
+    id : 5 ,
+    name : 'Product 05', 
+    tagline : 'Dress',
+    price : 225 ,
+    category: 'female' ,
+    image: pic2,
+    } ,
+    {
+    id : 6 ,
+    name : 'Product 06' , 
+    tagline : 'Dress',
+    price : 250 ,
+    category: 'female' ,
+    image: pic3,
+    },
+    {
+    id : 7 ,
+    name : 'Product 07' , 
+    tagline : 'Dress',
+    price : 200 ,
+    category: 'male' ,
+    image: P1,
+    },
+    {
+    id : 8 ,
+    name : 'Product 08' , 
+    tagline : 'Dress',
+    price : 225 ,
+    category: 'male' ,
+    image: pic2,
+    },
+    {
+    id : 9 ,
+    name : 'Product 09' , 
+    tagline : 'Dress',
+    price : 250 ,
+    category: 'male' ,
+    image: pic3,
+    },
+    {
+    id : 10 ,
+    name : 'Product 10' , 
+    tagline : 'Dress',
+    price : 175 ,
+    category: 'kids' ,
+    image: P1,
+    },
+    {
+    id : 11 ,
+    name : 'Product 11' , 
+    tagline : 'Dress',
+    price : 210 ,
+    category: 'kids' ,
+    image: pic2,
+    },
+    {
+    id : 12 ,
+    name : 'Product 12' , 
+    tagline : 'Dress',
+    price : 235 ,
+    category: 'kids' ,
+    image: pic3,
+    },
+] ;

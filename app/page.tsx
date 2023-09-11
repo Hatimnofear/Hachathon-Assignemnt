@@ -1,17 +1,22 @@
+import React from 'react'
+import Image from 'next/image'
+import Hero from '../src/views/Hero'
+import ProductList from '@/views/ProductList'
 import VinDes from '@/views/VinDes'
-import Hero from '@/views/Hero'
-import Newsletter from '@/views/Newsletter'
-import ProductsSlider from '@/views/ProductsSlider'
 import Promotions from '@/views/Promotions'
+
 
 export default function Home() {
   return (
-    <main>
+    <div>
       <Hero />
+    {/* Promotions*/ }
       <Promotions />
-      <ProductsSlider />
+    {/*  <ProductList />  */ }
+      <ProductList />
+          {/* List and Details*/ }
       <VinDes />
-      <Newsletter />
-    </main>
+      </div>
+      
   )
 }

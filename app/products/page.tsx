@@ -1,24 +1,23 @@
-import ProductCard from "@/components/ProductCard";
-import { Products } from "@/utils/mocks";
-import { StaticImageData } from "next/image";
+import ProductCard from "@/components/Productcard"
+import { Products } from "@/utils/mock"
+import { StaticImageData } from "next/image"
+
 
 const AllProducts = () => {
-  return (
-    <div className="flex flex-wrap justify-evenly mt-[32px]">
-      {Products.map((product) => {
-        return (
-          <ProductCard
-            key={product.id}
-            imgURL={product.img as StaticImageData}
-            title={product.title}
-            price={product.price}
-            category={product.category}
-            id={product.id}
-          />
-        );
-      })}
-    </div>
-  );
-};
-
-export default AllProducts;
+    return (
+             <div className="flex justify-evenly mt-16 py-10 flex-wrap">
+                { Products.map ( ( product ) => (   
+                    <ProductCard
+                    key = {product.id } 
+                    id = {product.id } 
+                    img={product.image as StaticImageData}
+                    title = {product.name} 
+                    price = {product.price} 
+          //          img = {product.image as StaticImageData}
+                    category = {product.category} 
+                 />
+           ))} 
+             </div>
+    )
+  }
+export default AllProducts 

@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 
 const Promotions = () => {
   return (
-    <div className='pt-24'>
+    <div className='pt-12 '>
       {/*top tags */}
       <div className='flex flex-col justify-center items-center '>
         <p className='  text-sm font-bold tracking-widest text-blue-600 '> PROMOTIONS</p>

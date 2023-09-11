@@ -1,36 +1,26 @@
-"use client";
+"use client"
+import React, {useState} from 'react'
+ 
+const Quantity = () => 
+{
+    const [num, setNum] =  useState(1);
 
-import { FaMinus, FaPlusCircle } from "react-icons/fa";
-import React, { useState } from "react";
-
-const Quantity = () => {
-  const [quantity, setQuantity] = useState(1);
-
-  const handleIncrement = () => {
-    setQuantity(quantity + 1);
-  };
-
-  const handleDecrement = () => {
-    setQuantity(quantity <= 1 ? 1 : quantity - 1);
-  };
-
-  return (
-    <div className="center gap-x-3">
-      <button
-        className="w-7 h-7 border rounded-full center"
-        onClick={() => handleDecrement()}
-      >
-        <FaMinus />
-      </button>
-      <div className="text-sm font-semibold">{quantity}</div>
-      <button
-        className="w-7 h-7 border rounded-full center"
-        onClick={() => handleIncrement()}
-      >
-        <FaPlusCircle />
-      </button>
+    return (
+    <div className='flex gap-x-2 items-center'>
+         {/*  Minus  */}
+         <button className='border h-6 w-6 rounded-full center' onClick = {() => {  setNum(num <= 1 ? 1 : num - 1 )  }}> - </button>
+         {/*  Numbers  */}
+         <span className='text-[10px]'>{num}</span>
+         {/*  Plus  */}
+         <button className='border h-6 w-6 rounded-full center' onClick = {() => {  setNum( num + 1 )  }}> + </button>
     </div>
   );
 };
 
-export default Quantity;
+export default Quantity
+
+
+export const OperationButton = () => 
+{   return 
+            <div className='border h-6 w-6 rounded-full center'>-</div>
+};

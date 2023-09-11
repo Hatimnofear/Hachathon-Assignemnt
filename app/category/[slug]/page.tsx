@@ -1,14 +1,11 @@
-import ProductCard from "@/components/ProductCard";
-import { Products } from "@/utils/mocks";
+import ProductCard from "@/components/Productcard";
+import { Products } from "@/utils/mock";
 import { StaticImageData } from "next/image";
 
 const getProductsByCategory = (category: string) => {
-  return Products.filter((product) => product.category === category);
+  return Products.filter((product)=> product.category === category);
 };
-
-
-
-const page = ({ params }: { params: { slug: string } }) => {
+const page = ({ params } : { params: { slug: string } }) => {
   const result = getProductsByCategory(params.slug);
   return (
     <div className="flex flex-wrap justify-evenly mt-[32px]">
@@ -19,11 +16,11 @@ const page = ({ params }: { params: { slug: string } }) => {
           return (
             <ProductCard
               key={product.id}
-              imgURL={product.img as StaticImageData}
-              title={product.title}
+              id={product.id}
+              img={product.image as StaticImageData}
+              title={product.name}
               price={product.price}
               category={product.category}
-              id={product.id}
             />
           );
         })
@@ -33,3 +30,8 @@ const page = ({ params }: { params: { slug: string } }) => {
 };
 
 export default page;
+
+/*
+  console.log(result)
+*/
+  
