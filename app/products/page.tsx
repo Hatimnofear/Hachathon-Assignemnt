@@ -13,7 +13,6 @@ const AllProducts = () => {
                     img={product.image as StaticImageData}
                     title = {product.name} 
                     price = {product.price} 
-          //          img = {product.image as StaticImageData}
                     category = {product.category} 
                  />
            ))} 

@@ -27,7 +27,7 @@ const Header = () => {
             <input type ="text" placeholder = "What are you looking for?"/>
             </div>
             <div className="h-10 w-10 rounded-full bg-gray-200 flex justify-center items-center relative hover:scale-150 duration-1">
-            <Link href="/products/">
+            <Link href="/cart">
                 <span className="absolute right-2 top-0 rounded-full bg-red-500 h-5 w-5 text-white text-sx text-center">{cartValue}</span>
             <FaShoppingCart size ={20}/>
             </Link>

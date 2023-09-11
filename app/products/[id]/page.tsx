@@ -83,13 +83,13 @@ const page = ({ params }: { params: { id: number } }) => {
                    <Quantity />
                  </div>
                  <div className="mt-5 flex items-center gap-x-5">
-                   <Button className="bg-[#000] text-[#fff] py-2 px-10">
-                     <FaShoppingCart />
+                 <AddToCart/>
+                { /*   <Button className="bg-[#000] text-[#fff] py-2 px-10">
                      <span className="ml-2">
-                     <AddToCart/>
+                    <FaShoppingCart/>           
                      </span>
-                   </Button>
-                   <h2 className="text-xl font-bold">{`$${product.price.toFixed(
+                  </Button> */ }
+                   <h2 className="text-xl font-bold">{`$ ${product.price.toFixed(
                      2
                    )}`}</h2>
                  </div>
